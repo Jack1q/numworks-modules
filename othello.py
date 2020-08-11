@@ -64,13 +64,6 @@ class Othello:
                 temp[k][l] = marker
                 k += 1
                 l += 1
-        # Left
-        j = column - 1
-        while j > 0 and self.board[row][j] == opponent_marker:
-            j -= 1
-        if j >= 0 and self.board[row][j] == marker:
-            for x in range(j, column):
-                temp[row][x] = marker
         # Above
         i = row - 1
         while i > 0 and self.board[i][column] == opponent_marker:
