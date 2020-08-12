@@ -195,7 +195,7 @@ class Othello:
         w = 0
         b = 0
         for x in self.board:
-            for y in self.board[x]:
+            for y in x:
                 if y == 'W':
                     w += 1
                 elif y == 'B':
